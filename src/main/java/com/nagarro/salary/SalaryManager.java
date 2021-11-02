@@ -6,6 +6,7 @@ import com.nagarro.salary.impl.HourCalculator;
 import com.nagarro.salary.impl.SaleCalculator;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -16,7 +17,7 @@ import java.util.List;
  * Time: 2:33 PM
  */
 public class SalaryManager {
-    private List<SalaryCalculator> calculators;
+    private List<SalaryCalculator> calculators= new ArrayList<>();
 
     public SalaryManager() {
         calculators.add(new BirthdayCacluator());
